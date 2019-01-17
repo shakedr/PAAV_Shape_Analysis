@@ -1,0 +1,21 @@
+x y z holder runner
+L0 x:=new L1
+L1 y:=new L2
+L2 x.n:=y L3
+L3 z:=new L4
+L4 y.n:=z L5
+L5 z.n:=x L6
+L6 x:=new L7
+L7 z:=new L8
+L8 x.n:=y L9
+L9 z.n:=x L10
+L10 x:=new L11
+L11 x.n:=z L12
+L12 runner:=x L13
+L13 runner:=runner.n L14
+L14 assume(runner==y) L15
+L14 assume(runner!=y) L13
+L15 runner:=runner.n L16
+L16 assume(runner!=y) L15
+L16 assume(runner==y) L17
+L17 assert(LS x y) L18

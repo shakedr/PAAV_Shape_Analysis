@@ -1,0 +1,16 @@
+x y z
+L0 x:=new L1
+L1 y:=new L2
+L2 z:=new L3
+L3 x.n:=y L4
+L4 y.n:=z L5
+L5 y:=new L6
+L6 z.n:=y L7
+L7 z:=new L8
+L8 y.n:=z L9
+L9 y:=new L11
+L11 z.n:=y L12
+L12 y:=NULL L13
+L13 z:=NULL L14
+L14 x:=x.n L15
+L15 assume(TRUE) L14

@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\shaked\documents\visual studio 2017\projects\static_analysis\static_analysis\main.cpp(54): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\shaked\documents\visual studio 2017\projects\static_analysis\static_analysis\main.cpp(57): warning C4129: ' ': unrecognized character escape sequence
+  Static_Analysis.vcxproj -> C:\Users\Shaked\documents\visual studio 2017\Projects\Static_Analysis\Debug\Static_Analysis.exe
+  Static_Analysis.vcxproj -> C:\Users\Shaked\documents\visual studio 2017\Projects\Static_Analysis\Debug\Static_Analysis.pdb (Partial PDB)

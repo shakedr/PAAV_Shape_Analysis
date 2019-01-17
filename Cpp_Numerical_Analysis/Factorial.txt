@@ -1,0 +1,19 @@
+fact res collected current_mul current_collected times_to_add counter
+L0 fact:=5 L1
+L1 res:=120 L2
+L2 collected:=fact L12
+L12 current_mul:=fact-1 L3
+L3 assume(current_mul!=1) L4
+L3 assume(current_mul==1) L10
+L4 current_collected:=collected L5
+L5 times_to_add:=current_mul L6
+L6 assume(times_to_add!=1) L7
+L6 assume(times_to_add==1) L15
+L15 current_mul:=current_mul-1 L3
+L7 counter:=current_collected L8
+L8 assume(counter!=0) L9
+L8 assume(counter==0) L14
+L14 times_to_add:=times_to_add-1 L6
+L9 collected:=collected+1 L13
+L13 counter:=counter-1 L8
+L10 assert((collected==res)) L11

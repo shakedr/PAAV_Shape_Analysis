@@ -1,0 +1,8 @@
+n m
+L0 m:=8 L1
+L1 n:=5 L2
+L2 assume(n==0) L5
+L2 assume(n!=0) L3
+L3 m:=m-1 L4
+L4 n:=n-1 L2
+L5 assert((even m)) L6

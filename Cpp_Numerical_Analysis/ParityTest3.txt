@@ -1,0 +1,7 @@
+n m
+L0 n:=100 L1
+L1 m:=n L2
+L2 assume(m==1) L5
+L2 assume(m!=1) L3
+L3 m:=m-1 L2
+L5 assert((odd m)) L6
